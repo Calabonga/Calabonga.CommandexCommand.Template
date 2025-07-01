@@ -9,8 +9,8 @@
     <Authors>Calabonga</Authors>
     <Description>DialogCommand templated for Commandex Framework</Description>
     <PackageTags>commandex, command, shell, calabonga, temptlate, tools, wpf, framework</PackageTags>
-    <PackageProjectUrl>https://github.com/Calabonga/Calabonga.Commandex.Commands</PackageProjectUrl>
-    <PackageReleaseNotes>Second commit</PackageReleaseNotes>
+    <PackageProjectUrl>https://github.com/Calabonga/Calabonga.CommandexCommand.Template</PackageProjectUrl>
+    <PackageReleaseNotes>Project and Repository URL's were fixed</PackageReleaseNotes>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
 
     <!-- Keep package type as 'Template' to show the package as a template package on nuget.org and make your template available in dotnet new search.-->
@@ -22,6 +22,7 @@
     <NoWarn>$(NoWarn);NU5128</NoWarn>
     <NoDefaultExcludes>true</NoDefaultExcludes>
     <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/Calabonga/Calabonga.CommandexCommand.Template</RepositoryUrl>
   </PropertyGroup>
 
   <PropertyGroup>
