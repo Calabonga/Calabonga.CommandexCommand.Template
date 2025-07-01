@@ -21,7 +21,7 @@ jobs:
           dotnet-version: 9.0.x
 
       - name: Install dependencies
-        run: dotnet restore src/Commandex.CommandexCommand.Template.sln.sln
+        run: dotnet restore src/Commandex.CommandexCommand.Template.sln
 
       - name: Build the NuGet package
         run: dotnet pack src/Calabonga.CommandexCommand.Template.sln --configuration Release --output ${{env.DOTNET_ROOT}}\Package
