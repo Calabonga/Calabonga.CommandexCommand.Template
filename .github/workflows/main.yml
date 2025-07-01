@@ -21,10 +21,10 @@ jobs:
           dotnet-version: 9.0.x
 
       - name: Install dependencies
-        run: dotnet restore src/Calabonga/Calabonga.CommandexCommand.Template.sln
+        run: dotnet restore src/Commandex.CommandexCommand.Template.sln.sln
 
       - name: Build the NuGet package
-        run: dotnet pack src/Calabonga/Calabonga.CommandexCommand.Template.sln --configuration Release --output ${{env.DOTNET_ROOT}}\Package
+        run: dotnet pack src/Calabonga.CommandexCommand.Template.sln --configuration Release --output ${{env.DOTNET_ROOT}}\Package
 
       - name: Publish NuGet Package
         run: dotnet nuget push ${{env.DOTNET_ROOT}}\Package\*.nupkg --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json --skip-duplicate
