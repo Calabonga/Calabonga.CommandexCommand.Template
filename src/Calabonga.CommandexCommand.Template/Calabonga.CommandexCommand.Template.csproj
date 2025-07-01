@@ -4,10 +4,10 @@
     <!-- The package metadata. Fill in the properties marked as TODO below -->
     <!-- Follow the instructions on https://learn.microsoft.com/en-us/nuget/create-packages/package-authoring-best-practices -->
     <PackageId>CommandexCommand.Template</PackageId>
-    <PackageVersion>1.0.0-beta.30</PackageVersion>
+    <PackageVersion>1.0.0-prerelease.1</PackageVersion>
     <Title>Commandex DialodCommandex Template</Title>
     <Authors>Calabonga</Authors>
-    <Description>DialogCommand templated for Commandex Framewordk/</Description>
+    <Description>DialogCommand templated for Commandex Framework/</Description>
     <PackageTags>commandex, command, shell, calabonga, temptlate, tools, wpf, framework</PackageTags>
     <PackageProjectUrl>https://github.com/Calabonga/Calabonga.Commandex.Commands</PackageProjectUrl>
     <PackageReleaseNotes>First release</PackageReleaseNotes>

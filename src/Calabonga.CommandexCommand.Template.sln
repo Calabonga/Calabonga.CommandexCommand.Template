@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.36221.1 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Commandex.CommandexCommand.Template", "Calabonga.CommandexCommand.Template\Commandex.CommandexCommand.Template.csproj", "{4D55D352-2692-951C-035B-CF18BDBC0C78}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calabonga.CommandexCommand.Template", "Calabonga.CommandexCommand.Template\Calabonga.CommandexCommand.Template.csproj", "{4D55D352-2692-951C-035B-CF18BDBC0C78}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
