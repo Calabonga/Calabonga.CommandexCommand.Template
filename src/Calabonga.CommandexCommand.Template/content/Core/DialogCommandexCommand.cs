@@ -1,5 +1,6 @@
 ﻿using Calabonga.Commandex.Engine.Commands;
 using Calabonga.Commandex.Engine.Dialogs;
+using Calabonga.Utils.Extensions;
 using Commandex.DialogCommand.Core.ViewModels;
 using Commandex.DialogCommand.Core.Views;
 using System.Reflection;
@@ -8,7 +9,8 @@ namespace Commandex.DialogCommand.Core;
 
 public class COMMAND-NAMECommandexCommand : DialogCommandexCommand<COMMAND-NAMEView, COMMAND-NAMEResult>
 {
-    public COMMAND-NAMECommandexCommand(IDialogService dialogService) : base(dialogService)
+    public COMMAND-NAMECommandexCommand(IDialogService dialogService) 
+        : base(dialogService)
     {
     }
 
@@ -22,5 +24,5 @@ public class COMMAND-NAMECommandexCommand : DialogCommandexCommand<COMMAND-NAMEV
         => "A description of the command COMMAND-NAME about what it can do or what it is created for";
 
     public override string Version
-        => Assembly.GetExecutingAssembly().GetName().Version?.ToString() ?? "N/A";
+        => Assembly.GetExecutingAssembly().GetVersionFromAssembly().WithoutMetadata().ToString();
 }

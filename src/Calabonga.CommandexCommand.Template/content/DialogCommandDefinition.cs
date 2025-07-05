@@ -10,10 +10,10 @@ namespace Commandex.DialogCommand;
 public class COMMAND-NAMEDefinition : AppDefinition
 {
     public override void ConfigureServices(IServiceCollection services)
-    {
-        // register here all dependencies you need
-        services.AddScoped<ICommandexCommand, COMMAND-NAMECommandexCommand> ();
-        services.AddScoped<COMMAND-NAMEView> ();
-        services.AddScoped<COMMAND-NAMEResult> ();
-    }
+{
+    // register here all dependencies you need
+    services.AddScoped <ICommandexCommand, COMMAND-NAMECommandexCommand> ();
+    services.AddScoped <COMMAND-NAMEView> ();
+    services.AddScoped <COMMAND-NAMEResult> ();
+}
 }
