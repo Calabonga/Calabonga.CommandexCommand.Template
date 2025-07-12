@@ -1,28 +1,39 @@
 ﻿using Calabonga.Commandex.Engine.Commands;
 using Calabonga.Commandex.Engine.Dialogs;
-using Calabonga.Utils.Extensions;
 using Commandex.DialogCommand.Core.ViewModels;
 using Commandex.DialogCommand.Core.Views;
 using System.Reflection;
 
 namespace Commandex.DialogCommand.Core;
 
-public class COMMAND-NAMECommandexCommand : DialogCommandexCommand<COMMAND-NAMEView, COMMAND-NAMEResult>
+public class COMMAND_NAMECommandexCommand : DialogCommandexCommand<COMMAND_NAMEView, COMMAND_NAMEResult>
 {
-    public COMMAND-NAMECommandexCommand(IDialogService dialogService) 
+    public COMMAND_NAMECommandexCommand(IDialogService dialogService) 
         : base(dialogService)
     {
     }
 
+    /// <summary>
+    /// Who create this command COMMAND_NAME?
+    /// </summary>
     public override string CopyrightInfo
-        => "Who create the command COMMAND-NAME?";
+        => "Copyright © 2025";
 
+    /// <summary>
+    /// A display name of the command COMMAND_NAME will be shown in command list
+    /// </summary>
     public override string DisplayName
-        => "A display name of the command COMMAND-NAME will be shown in command list";
+        => "COMMAND_NAME display name";
 
+    /// <summary>
+    /// A description of the command COMMAND_NAME about what it can do or what it is created for
+    /// </summary>
     public override string Description
-        => "A description of the command COMMAND-NAME about what it can do or what it is created for";
+        => "COMMAND_NAME description";
 
+    /// <summary>
+    /// Version will show from project-file version attribute value
+    /// </summary>
     public override string Version
-        => Assembly.GetExecutingAssembly().GetVersionFromAssembly().WithoutMetadata().ToString();
+        => Assembly.GetExecutingAssembly().GetName().Version?.ToString() ?? "0.0.0.0";
 }

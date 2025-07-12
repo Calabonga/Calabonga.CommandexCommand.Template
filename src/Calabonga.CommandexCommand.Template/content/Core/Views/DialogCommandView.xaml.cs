@@ -4,11 +4,11 @@ using System.Windows.Controls;
 namespace Commandex.DialogCommand.Core.Views;
 
 /// <summary>
-/// Interaction logic for COMMAND-NAMEView.xaml
+/// Interaction logic for COMMAND_NAMEView.xaml
 /// </summary>
-public partial class COMMAND-NAMEView : UserControl, IDialogView
+public partial class COMMAND_NAMEView : UserControl, IDialogView
 {
-    public COMMAND-NAMEView()
+    public COMMAND_NAMEView()
     {
         InitializeComponent();
     }
