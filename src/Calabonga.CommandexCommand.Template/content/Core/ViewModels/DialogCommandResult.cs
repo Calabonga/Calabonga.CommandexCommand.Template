@@ -5,11 +5,11 @@ using System.Windows;
 
 namespace Commandex.DialogCommand.Core.ViewModels;
 
-public partial class COMMAND-NAMEResult : DefaultDialogResult
+public partial class COMMAND_NAMEResult : DefaultDialogResult
 {
-    public COMMAND-NAMEResult(ICommandexCommand command)
+    public COMMAND_NAMEResult(ICommandexCommand command)
     {
-        Title = "COMMAND-NAME created from Commandex Template";
+        Title = "COMMAND_NAME created from Commandex Template";
         Command = command;
     }
 
