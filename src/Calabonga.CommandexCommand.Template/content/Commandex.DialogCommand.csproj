@@ -9,7 +9,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Calabonga.Commandex.Engine.Processors" Version="2.8.1" />
+    <PackageReference Include="Calabonga.Commandex.Engine.Processors" Version="3.0.0" />
 	</ItemGroup>
 
 </Project>

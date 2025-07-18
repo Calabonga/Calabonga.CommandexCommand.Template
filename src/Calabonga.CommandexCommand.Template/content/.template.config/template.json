@@ -8,8 +8,8 @@
         "Desktop",
         "Templating"
     ],
-    "name": "Command Template for Commandex",
-    "description": "DialogCommand template for CommandexCommand",
+    "name": "Dialog CommandexCommand Template",
+    "description": "A WPF class library project with implemented a DialogCommandexCommand as a template for Commandex Framework",
     "identity": "Commandex.DialogCommand",
     "shortName": "wpfcmdx-dialog",
     "tags": {
