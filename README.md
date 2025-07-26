@@ -2,7 +2,9 @@
 
 ## Description
 
-This is a nuget-package [Calabonga.CommandexCommand.Template](https://www.nuget.org/packages/Calabonga.CommandexCommand.Template) (tools) that install to your Visual Studio a new type of the project. New type project can create a CommandexCommand (DialogCommand) for your Commandex Shell.
+This is a nuget-package [Calabonga.CommandexCommand.Template](https://www.nuget.org/packages/Calabonga.CommandexCommand.Template) (tools) that install to your Visual Studio a new types of the projects. A new project-types can create a few Commandex Commands for your Commandex Shell. There are two types of the `CommandexCommand` available for now:
+* DialogCommand
+* ZoneCommand
 
 ## What is Calabonga.Commandex
 
@@ -22,7 +24,7 @@ It's a complex solution with a few repositories:
 * **[Calabonga.Commandex.Engine.Processors](https://github.com/Calabonga/Calabonga.Commandex.Engine.Processors)** →  Results Processors for Calabonga.Commandex.Shell commands execution results. This is an extended version of the just show string in the notification dialog.
 * **[Calabonga.CommandexCommand.Template](https://github.com/Calabonga/Calabonga.CommandexCommand.Template)** →  (`Tool Template`) This is a template of the project to create a Command for Commandex. Just install this nuget as a template for Visual Studio (Rider or dotnet CLI) and then you can create a DialogCommand faster.
 
-## How to install template
+## How to install templates
 
 Nothing is simpler then install this template. Just execute command in `powershell`:
 

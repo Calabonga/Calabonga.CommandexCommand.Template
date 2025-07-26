@@ -1,0 +1,30 @@
+﻿<UserControl x:Class="Commandex.ZoneCommand.Core.Views.COMMAND_NAMEView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Margin="12">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        
+        <StackPanel VerticalAlignment="Center">
+            <TextBlock Text="Command under testing:"  FontSize="13" HorizontalAlignment="Center" FontWeight="Bold"/>
+            <TextBlock Text="{Binding Path=Command.DisplayName}" FontSize="20" HorizontalAlignment="Center" TextWrapping="Wrap" Foreground="DarkOrange"/>
+            <TextBlock Text="{Binding Path=Command.Version}" FontSize="14" HorizontalAlignment="Center" TextWrapping="Wrap" Foreground="Gray"/>
+            <TextBlock Text="{Binding Path=Command.TypeName}" FontSize="14" HorizontalAlignment="Center" TextWrapping="Wrap" Foreground="Gray"/>
+            <TextBlock Text="{Binding Path=Command.Description}" FontSize="12" HorizontalAlignment="Center" TextWrapping="Wrap" Foreground="Gray"/>
+            <TextBlock Text="{Binding Path=Command.CopyrightInfo}" FontSize="20" HorizontalAlignment="Center" TextWrapping="Wrap" Foreground="DodgerBlue"/>
+        </StackPanel>
+
+        <StackPanel HorizontalAlignment="Right" Orientation="Horizontal" Grid.Row="1">
+            <Button Command="{Binding Path=GoBackCommand}"
+                    Content="Go Back to shell"
+                    Padding="10"/>
+        </StackPanel>
+
+    </Grid>
+</UserControl>
