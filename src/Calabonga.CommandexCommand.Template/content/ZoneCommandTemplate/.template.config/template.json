@@ -1,0 +1,58 @@
+﻿{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Calabonga SOFT",
+
+    "classifications": [
+        "Common",
+        "Windows",
+        "Desktop",
+        "Templating"
+    ],
+    "name": "Zone CommandexCommand Template",
+    "description": "A WPF class library project with implemented a ZoneCommandexCommand as a template for Commandex Framework",
+    "identity": "Commandex.ZoneCommand",
+    "shortName": "wpfcmdx-dialog",
+    "tags": {
+        "language": "C#",
+        "type": "project"
+    },
+    "defaultName": "Commandex.ZoneCommand1",
+    "sourceName": "Commandex.ZoneCommand",
+    "preferNameDirectory": true,
+    "sources": [
+        {
+            "modifiers": [
+                {
+                    "exclude": [
+                        ".vs/**",
+                        ".idea/**",
+                        "_ReSharper.Caches/**",
+                        ".template_config/**"
+                    ]
+                }
+            ]
+        }
+    ],
+    "symbols": {
+        "Framework": {
+            "type": "parameter",
+            "description": "The target framework for the project.",
+            "datatype": "choice",
+            "choices": [
+                {
+                    "choice": "net9.0"
+                }
+            ],
+            "defaultValue": "net9.0"
+        },
+        "CommandName": {
+            "type": "parameter",
+            "datatype": "string",
+            "defaultValue": "ZoneCommand",
+            "replaces": "COMMAND_NAME",
+            "description": "The name of the command for Commandex.",
+            "fileRename": "ZoneCommand"
+        }
+    }
+
+}
