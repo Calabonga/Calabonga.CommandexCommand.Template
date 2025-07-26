@@ -5,17 +5,18 @@ using CommunityToolkit.Mvvm.Input;
 
 namespace Commandex.ZoneCommand.Core.ViewModels;
 
-public partial class ZoneCommandViewModel : ZoneViewModelBase
+public partial class COMMAND_NAMEViewModel : ZoneViewModelBase
 {
-    public ZoneCommandViewModel(ICommandexCommand command)
+    public COMMAND_NAMEViewModel(ICommandexCommand command)
     {
-        _command = command;
+        Title = "COMMAND_NAME created from Commandex Template";
+        Command = command;
     }
 
     #region property Command
 
     /// <summary>
-    /// Property Command
+    /// Property Command to show on UI your COMMAND_NAME
     /// </summary>
     [ObservableProperty] private ICommandexCommand _command;
 

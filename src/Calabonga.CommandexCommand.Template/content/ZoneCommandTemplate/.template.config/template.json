@@ -11,7 +11,7 @@
     "name": "Zone CommandexCommand Template",
     "description": "A WPF class library project with implemented a ZoneCommandexCommand as a template for Commandex Framework",
     "identity": "Commandex.ZoneCommand",
-    "shortName": "wpfcmdx-dialog",
+    "shortName": "wpfcmdx-zone",
     "tags": {
         "language": "C#",
         "type": "project"
@@ -50,7 +50,7 @@
             "datatype": "string",
             "defaultValue": "ZoneCommand",
             "replaces": "COMMAND_NAME",
-            "description": "The name of the command for Commandex.",
+            "description": "The name of the command for Commandex. It's a good practice when the name ends with suffix 'Command'",
             "fileRename": "ZoneCommand"
         }
     }

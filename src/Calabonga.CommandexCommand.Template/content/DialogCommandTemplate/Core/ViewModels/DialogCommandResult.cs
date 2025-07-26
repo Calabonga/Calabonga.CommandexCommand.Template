@@ -30,7 +30,7 @@ public partial class COMMAND_NAMEResult : DefaultDialogResult
     #region property Command
 
     /// <summary>
-    /// Property Command
+    /// Property Command to show on UI your COMMAND_NAME
     /// </summary>
     [ObservableProperty] private ICommandexCommand _command;
 

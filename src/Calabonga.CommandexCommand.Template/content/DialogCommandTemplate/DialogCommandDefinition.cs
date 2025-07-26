@@ -12,7 +12,7 @@ public class COMMAND_NAMEDefinition : AppDefinition
     public override void ConfigureServices(IServiceCollection services)
 {
     // register here all dependencies you need
-    services.AddScoped <ICommandexCommand, COMMAND_NAMECommandexCommand> ();
+    services.AddScoped <ICommandexCommand, COMMAND_NAMECommandex> ();
     services.AddScoped <COMMAND_NAMEView>();
     services.AddScoped <COMMAND_NAMEResult>();
 }

@@ -7,12 +7,12 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace Commandex.ZoneCommand;
 
-public class ZoneCommandDefinition : AppDefinition
+public class COMMAND_NAMEDefinition : AppDefinition
 {
     public override void ConfigureServices(IServiceCollection services)
     {
-        services.AddScoped<ICommandexCommand, ZoneCommandCommandexCommand>();
-        services.AddScoped<ZoneCommandView>();
-        services.AddScoped<ZoneCommandViewModel>();
+        services.AddScoped<ICommandexCommand, COMMAND_NAMECommandex>();
+        services.AddScoped<COMMAND_NAMEView>();
+        services.AddScoped<COMMAND_NAMEViewModel>();
     }
 }

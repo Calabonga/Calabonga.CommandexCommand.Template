@@ -3,11 +3,11 @@ using System.Windows.Controls;
 
 namespace Commandex.ZoneCommand.Core.Views;
 /// <summary>
-/// Interaction logic for ZoneCommandView.xaml
+/// Interaction logic for COMMAND_NAMEView.xaml
 /// </summary>
-public partial class ZoneCommandView : UserControl, IZoneView
+public partial class COMMAND_NAMEView : UserControl, IZoneView
 {
-    public ZoneCommandView()
+    public COMMAND_NAMEView()
     {
         InitializeComponent();
     }

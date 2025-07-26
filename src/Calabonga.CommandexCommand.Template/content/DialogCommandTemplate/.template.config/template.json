@@ -50,7 +50,7 @@
             "datatype": "string",
             "defaultValue": "DialogCommand",
             "replaces": "COMMAND_NAME",
-            "description": "The name of the command for Commandex.",
+            "description": "The name of the command for Commandex. It's a good practice when the name ends with suffix 'Command'",
             "fileRename": "DialogCommand"
         }
     }
