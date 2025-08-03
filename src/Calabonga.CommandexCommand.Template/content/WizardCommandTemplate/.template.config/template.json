@@ -1,0 +1,58 @@
+﻿{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Calabonga SOFT",
+
+    "classifications": [
+        "Common",
+        "Windows",
+        "Desktop",
+        "Templating"
+    ],
+    "name": "Wizrd CommandexCommand Template",
+    "description": "A WPF class library project with implemented a WizardCommandexCommand as a template for Commandex Framework",
+    "identity": "Commandex.WizardCommand",
+    "shortName": "wpfcmdx-wizard",
+    "tags": {
+        "language": "C#",
+        "type": "project"
+    },
+    "defaultName": "Commandex.WizardCommand1",
+    "sourceName": "Commandex.WizardCommand",
+    "preferNameDirectory": true,
+    "sources": [
+        {
+            "modifiers": [
+                {
+                    "exclude": [
+                        ".vs/**",
+                        ".idea/**",
+                        "_ReSharper.Caches/**",
+                        ".template_config/**"
+                    ]
+                }
+            ]
+        }
+    ],
+    "symbols": {
+        "Framework": {
+            "type": "parameter",
+            "description": "The target framework for the project.",
+            "datatype": "choice",
+            "choices": [
+                {
+                    "choice": "net9.0"
+                }
+            ],
+            "defaultValue": "net9.0"
+        },
+        "CommandName": {
+            "type": "parameter",
+            "datatype": "string",
+            "defaultValue": "WizardCommand",
+            "replaces": "COMMAND_NAME",
+            "description": "The name of the command for Commandex. It's a good practice when the name ends with suffix 'Command'",
+            "fileRename": "WizardCommand"
+        }
+    }
+
+}
