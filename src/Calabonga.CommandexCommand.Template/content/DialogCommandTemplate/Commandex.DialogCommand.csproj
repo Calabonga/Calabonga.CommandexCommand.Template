@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFramework>net9.0-windows8.0</TargetFramework>
+		<TargetFramework>net10.0-windows8.0</TargetFramework>
 		<Nullable>enable</Nullable>
 		<UseWPF>true</UseWPF>
 		<ImplicitUsings>enable</ImplicitUsings>
@@ -9,7 +9,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-    <PackageReference Include="Calabonga.Commandex.Engine.Processors" Version="3.0.0" />
+    <PackageReference Include="Calabonga.Commandex.Engine.Processors" Version="4.0.0" />
 	</ItemGroup>
 
 </Project>
