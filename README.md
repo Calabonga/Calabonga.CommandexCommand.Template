@@ -2,9 +2,13 @@
 
 ## Description
 
-This is a nuget-package [Calabonga.CommandexCommand.Template](https://www.nuget.org/packages/Calabonga.CommandexCommand.Template) (tools) that install to your Visual Studio a new types of the projects. A new project-types can create a few Commandex Commands for your Commandex Shell. There are two types of the `CommandexCommand` available for now:
-* DialogCommand
-* ZoneCommand
+This is a nuget-package [Calabonga.CommandexCommand.Template](https://www.nuget.org/packages/Calabonga.CommandexCommand.Template) (tools) that installs a set of `dotnet new` project templates. Each template scaffolds a WPF class library with one `CommandexCommand` ready to build and plug into your Commandex Shell. Three templates are available:
+
+| Template (`shortName`) | Command base class | Purpose |
+| --- | --- | --- |
+| `wpfcmdx-dialog` | `DialogCommandexCommand<TView, TResult>` | command that opens a modal dialog and (optionally) returns a typed result |
+| `wpfcmdx-wizard` | `WizardDialogCommandexCommand<TViewModel>` | multi-step wizard dialog (sample: 4 steps collecting a `PersonViewModel`) |
+| `wpfcmdx-zone` | `ZoneCommandexCommand<TView, TViewModel>` | command hosted inline in the Shell `MainZone` instead of a window |
 
 ## What is Calabonga.Commandex
 
@@ -34,7 +38,18 @@ dotnet new install Calabonga.CommandexCommand.Template
 
 ## How to use
 
-Just created a command form template and add your functionality. After that you can build a command and push it to your Shell.
+1. Create a project from one of the templates (the `--command-name` / `-cn` option names the generated command class; end it with `Command` by convention):
+
+    ``` powershell
+    dotnet new wpfcmdx-dialog -n My.Thing --command-name MyThingCommand
+    # or: dotnet new wpfcmdx-wizard -n My.Thing --command-name MyThingCommand
+    # or: dotnet new wpfcmdx-zone   -n My.Thing --command-name MyThingCommand
+    ```
+
+2. Implement your logic in the generated `*Commandex` command class and its `AppDefinition`. For the wizard template, fill in the steps and the payload view model.
+3. Build the project and plug the resulting `.dll` into your Shell — copy it into `Calabonga.Commandex.Shell/PublishedCommands`, or add a project reference from `Calabonga.Commandex.Shell.Develop` for in-place debugging.
+
+Keep the `Calabonga.Commandex.Engine` package version in the generated `.csproj` equal to the Engine version the target Shell is built against.
 
 ## Ingredients
 

@@ -5,7 +5,7 @@ using CommunityToolkit.Mvvm.Input;
 
 namespace Commandex.ZoneCommand.Core.ViewModels;
 
-public partial class COMMAND_NAMEViewModel : ZoneViewModelBase
+public sealed partial class COMMAND_NAMEViewModel : ZoneViewModelBase
 {
     public COMMAND_NAMEViewModel(ICommandexCommand command)
     {

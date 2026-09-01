@@ -6,7 +6,7 @@ using System.Reflection;
 
 namespace Commandex.DialogCommand.Core;
 
-public class COMMAND_NAMECommandex : DialogCommandexCommand<COMMAND_NAMEView, COMMAND_NAMEResult>
+public sealed class COMMAND_NAMECommandex : DialogCommandexCommand<COMMAND_NAMEView, COMMAND_NAMEResult>
 {
     public COMMAND_NAMECommandex(IDialogService dialogService) 
         : base(dialogService)

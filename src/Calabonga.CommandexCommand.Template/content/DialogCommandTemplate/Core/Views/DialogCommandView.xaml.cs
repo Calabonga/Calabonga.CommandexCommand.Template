@@ -6,7 +6,7 @@ namespace Commandex.DialogCommand.Core.Views;
 /// <summary>
 /// Interaction logic for COMMAND_NAMEView.xaml
 /// </summary>
-public partial class COMMAND_NAMEView : UserControl, IDialogView
+public sealed partial class COMMAND_NAMEView : UserControl, IDialogView
 {
     public COMMAND_NAMEView()
     {

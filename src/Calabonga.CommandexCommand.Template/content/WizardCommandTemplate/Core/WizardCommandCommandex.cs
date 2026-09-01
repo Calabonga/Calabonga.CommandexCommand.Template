@@ -8,7 +8,7 @@ using System.Text.Json;
 
 namespace Commandex.WizardCommand.Core;
 
-public class COMMAND_NAMECommandex : WizardDialogCommandexCommand<WizardCommandViewModel>
+public sealed class COMMAND_NAMECommandex : WizardDialogCommandexCommand<COMMAND_NAMEViewModel>
 {
     private readonly ILogger<COMMAND_NAMECommandex> _logger;
 
@@ -41,7 +41,7 @@ public class COMMAND_NAMECommandex : WizardDialogCommandexCommand<WizardCommandV
 
     public override bool IsPushToShellEnabled => true;
 
-    protected override WizardCommandViewModel SetResult(WizardCommandViewModel result)
+    protected override COMMAND_NAMEViewModel SetResult(COMMAND_NAMEViewModel result)
     {
         return result;
     }

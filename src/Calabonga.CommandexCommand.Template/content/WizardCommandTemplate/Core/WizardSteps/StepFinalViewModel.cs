@@ -17,5 +17,5 @@ public sealed partial class StepFinalViewModel : WizardStepViewModel<PersonViewM
     [ObservableProperty]
     private PersonViewModel? _person;
 
-    public override void OnEnter(PersonViewModel? payload) => Person = payload!;
+    public override void OnEnter(PersonViewModel? payload) => Person = payload;
 }
