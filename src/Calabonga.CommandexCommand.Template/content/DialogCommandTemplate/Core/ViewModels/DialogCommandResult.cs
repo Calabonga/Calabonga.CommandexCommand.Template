@@ -5,7 +5,7 @@ using System.Windows;
 
 namespace Commandex.DialogCommand.Core.ViewModels;
 
-public partial class COMMAND_NAMEResult : DefaultDialogResult
+public sealed partial class COMMAND_NAMEResult : DefaultDialogResult
 {
     public COMMAND_NAMEResult(ICommandexCommand command)
     {

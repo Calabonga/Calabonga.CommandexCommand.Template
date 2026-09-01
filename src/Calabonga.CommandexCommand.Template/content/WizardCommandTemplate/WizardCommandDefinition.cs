@@ -1,6 +1,5 @@
 ﻿using Calabonga.Commandex.Engine.Base;
 using Calabonga.Commandex.Engine.Extensions;
-using Calabonga.Commandex.Engine.NugetDependencies;
 using Calabonga.Wpf.AppDefinitions;
 using Commandex.WizardCommand.Core;
 using Commandex.WizardCommand.Core.Entities;
@@ -10,12 +9,12 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace Commandex.WizardCommand;
 
-public class COMMAND_NAMEDefinition : AppDefinition
+public sealed class COMMAND_NAMEDefinition : AppDefinition
 {
     public override void ConfigureServices(IServiceCollection services)
     {
         services.AddScoped<ICommandexCommand, COMMAND_NAMECommandex>();
-         services.AddWizard<WizardCommandViewModel>();
+        services.AddWizard<COMMAND_NAMEViewModel>();
 
         services.AddWizardStep<Step1, Step1WizardViewModel, PersonViewModel>("Step 1");
         services.AddWizardStep<Step2, Step2WizardViewModel, PersonViewModel>("Step 2");

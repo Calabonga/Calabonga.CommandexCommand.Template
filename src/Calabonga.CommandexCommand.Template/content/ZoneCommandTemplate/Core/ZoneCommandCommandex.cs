@@ -5,7 +5,7 @@ using Commandex.ZoneCommand.Core.Views;
 
 namespace Commandex.ZoneCommand.Core;
 
-public class COMMAND_NAMECommandex : ZoneCommandexCommand<COMMAND_NAMEView, COMMAND_NAMEViewModel>
+public sealed class COMMAND_NAMECommandex : ZoneCommandexCommand<COMMAND_NAMEView, COMMAND_NAMEViewModel>
 {
     public COMMAND_NAMECommandex(IZoneManager zoneManager) : base(zoneManager)
     {

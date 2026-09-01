@@ -10,12 +10,12 @@ namespace Commandex.WizardCommand.Core.ViewModels;
 /// <summary>
 /// Person ViewModel Wizard Commandex Command
 /// </summary>
-public sealed class WizardCommandViewModel : WizardDialogViewModel<PersonViewModel>
+public sealed class COMMAND_NAMEViewModel : WizardDialogViewModel<PersonViewModel>
 {
-    private readonly ILogger<WizardCommandViewModel> _logger;
+    private readonly ILogger<COMMAND_NAMEViewModel> _logger;
 
-    public WizardCommandViewModel(
-        ILogger<WizardCommandViewModel> logger,
+    public COMMAND_NAMEViewModel(
+        ILogger<COMMAND_NAMEViewModel> logger,
         IWizardManager<PersonViewModel> manager) : base(manager)
     {
         _logger = logger;

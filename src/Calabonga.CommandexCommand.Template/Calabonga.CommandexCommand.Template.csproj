@@ -4,14 +4,14 @@
     <!-- The package metadata. Fill in the properties marked as TODO below -->
     <!-- Follow the instructions on https://learn.microsoft.com/en-us/nuget/create-packages/package-authoring-best-practices -->
     <PackageId>Calabonga.CommandexCommand.Template</PackageId>
-    <PackageVersion>4.0.0</PackageVersion>
+    <PackageVersion>5.0.0</PackageVersion>
     <Title>Calabonga.CommandexCommand.Template</Title>
     <Authors>Calabonga</Authors>
     <Copyright>Calabonga SOFT © 2024-$([System.DateTime]::Now.ToString(yyyy))</Copyright>
     <Description>DialogCommand templated for Commandex Framework</Description>
     <PackageTags>commandex, command, shell, calabonga, template, tools, wpf, framework</PackageTags>
     <PackageProjectUrl>https://github.com/Calabonga/Calabonga.CommandexCommand.Template</PackageProjectUrl>
-    <PackageReleaseNotes>Migration to NET10</PackageReleaseNotes>
+    <PackageReleaseNotes>Aligned with Commandex Framework 5.0.0: all three templates now reference Calabonga.Commandex.Engine 5.0.0. Freshly created command still starts at version 1.0.0.</PackageReleaseNotes>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
 
     <!-- Keep package type as 'Template' to show the package as a template package on nuget.org and make your template available in dotnet new search.-->
@@ -37,16 +37,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="content\**\*" Exclude="content\**\bin\**;content\**\obj\**" />
+    <Content Include="content\**\*" Exclude="content\**\bin\**;content\**\obj\**;content\**\.vs\**;content\**\.idea\**;content\**\_ReSharper.Caches\**" />
     <Compile Remove="**\*" />
-    <Compile Remove="content\.vs\**" />
-    <Compile Remove="content\obj\**" />
-    <Content Remove="content\.vs\**" />
-    <Content Remove="content\obj\**" />
-    <EmbeddedResource Remove="content\.vs\**" />
-    <EmbeddedResource Remove="content\obj\**" />
-    <None Remove="content\.vs\**" />
-    <None Remove="content\obj\**" />
   </ItemGroup>
 
     <ItemGroup>

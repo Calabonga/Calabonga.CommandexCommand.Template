@@ -7,13 +7,13 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace Commandex.DialogCommand;
 
-public class COMMAND_NAMEDefinition : AppDefinition
+public sealed class COMMAND_NAMEDefinition : AppDefinition
 {
     public override void ConfigureServices(IServiceCollection services)
-{
-    // register here all dependencies you need
-    services.AddScoped <ICommandexCommand, COMMAND_NAMECommandex> ();
-    services.AddScoped <COMMAND_NAMEView>();
-    services.AddScoped <COMMAND_NAMEResult>();
-}
+    {
+        // register here all dependencies you need
+        services.AddScoped<ICommandexCommand, COMMAND_NAMECommandex>();
+        services.AddScoped<COMMAND_NAMEView>();
+        services.AddScoped<COMMAND_NAMEResult>();
+    }
 }

@@ -5,11 +5,11 @@
 		<Nullable>enable</Nullable>
 		<UseWPF>true</UseWPF>
 		<ImplicitUsings>enable</ImplicitUsings>
-		<Version>4.0.0</Version>
+		<Version>1.0.0</Version>
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Calabonga.Commandex.Engine" Version="4.0.0" />
+		<PackageReference Include="Calabonga.Commandex.Engine" Version="5.0.0" />
 	</ItemGroup>
 
 </Project>

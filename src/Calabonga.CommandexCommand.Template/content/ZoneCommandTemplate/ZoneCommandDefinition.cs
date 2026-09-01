@@ -7,7 +7,7 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace Commandex.ZoneCommand;
 
-public class COMMAND_NAMEDefinition : AppDefinition
+public sealed class COMMAND_NAMEDefinition : AppDefinition
 {
     public override void ConfigureServices(IServiceCollection services)
     {

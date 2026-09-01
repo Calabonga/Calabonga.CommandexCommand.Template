@@ -27,7 +27,8 @@
                         ".vs/**",
                         ".idea/**",
                         "_ReSharper.Caches/**",
-                        ".template_config/**"
+                        "**/bin/**",
+                        "**/obj/**"
                     ]
                 }
             ]
